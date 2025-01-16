@@ -3,13 +3,18 @@
 #set page(margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm))
 #set text(font: "New Computer Modern", size: 9.5pt)
 
+#show link: it => {
+  set text(fill: blue)
+  underline(it)
+}
+
 // Header
 #align(left)[
   #set par(leading: 0.5em)
   #block[
     #text(20pt, weight: "bold")[Luis Victoria]
     #linebreak()
-    #text(9.5pt)[#link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] | #link("tel:+19294208800")[+1 (929) 420-8800] | #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] | #link("https://github.com/lv")[github.com/lv]]
+    #text(9.5pt)[#link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] | +1 (929) 420-8800 | #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] | #link("https://github.com/lv")[github.com/lv]]
   ]
 ]
 
