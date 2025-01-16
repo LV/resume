@@ -4,7 +4,7 @@
 #set text(font: "New Computer Modern", size: 9.5pt)
 
 #show link: it => {
-  set text(fill: blue)
+  set text(fill: rgb(29, 47, 120))
   underline(it)
 }
 
