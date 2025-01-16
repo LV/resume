@@ -3,10 +3,19 @@
 #set page(margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm))
 #set text(font: "New Computer Modern", size: 9.5pt)
 
+
+// Override properties
 #show link: it => {
   set text(fill: rgb(29, 47, 120))
   underline(it)
 }
+
+#show line: it => {
+  v(-1.25em)
+  it
+  v(0em)
+}
+
 
 // Header
 #align(left)[
@@ -45,7 +54,8 @@
   - *Storage Prediction Tool*: Independently designed and implemented a Python tool to forecast machine storage use, deployed across 750 production machines to proactively set off alarms before reaching capacity limits.
   - *Proactive Automation*: Automated various quality control procedures to verify machine synchronization for non-standardized production environments, reducing manual processes averaging 8 minutes down to a single click.
 
-// Farringdon Entry
+#v(0.5em)
+// Farringdon Asset Management Entry
 #grid(
   columns: (auto, 1fr),
   gutter: 1em,
@@ -64,6 +74,7 @@
   - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>
   - *Technical Research*: Leveraged Bollinger Bands and Stochastic Oscillators to support quantitative decision-making on biomedical pharmaceutical startups.
 
+#v(1em)
 // Education Section
 #text(14pt, weight: "bold")[Education]
 #line(length: 100%, stroke: 0.5pt)
@@ -87,12 +98,14 @@
   - *Awards*: Blockathon 2019 Champion, Sauder Entrepreneurial Prediction Market 2022 Champion
   - *Extracurricular Activities*: Ilios Investment Club - Head of Technology
 
+#v(1em)
 // Volunteer Work Section
 #text(14pt, weight: "bold")[Volunteer Work]
 #line(length: 100%, stroke: 0.5pt)
   - *Fundación ManoloNet*: Developed a Codecademy-like webpage via Django, teaching prospective blind teenagers Python.
   - *Club de Niños y Niñas de México*: Implemented HTTPS using Let's Encrypt and prototyped a redesigned front page.
 
+#v(1em)
 // Skills Section
 #text(14pt, weight: "bold")[Skills]
 #line(length: 100%, stroke: 0.5pt)
