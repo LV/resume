@@ -27,6 +27,7 @@
   ]
 ]
 
+#v(0.5em)
 // Work Experience Section
 #text(14pt, weight: "bold")[Work Experience]
 #line(length: 100%, stroke: 0.5pt)
@@ -85,7 +86,7 @@
   align(left)[
     *Business and Computer Science*
     #linebreak()
-    University of British Columbia
+    Bachelor of Commerce - Sauder School of Business, University of British Columbia
   ],
   align(right)[
     Sep 2018 - Dec 2022
@@ -94,7 +95,7 @@
   ]
 )
   - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Advanced Software Construction, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III, Information Systems Analysis & Design
-  - *Key Projects*: Automatic Function Composition (#link("https://github.com/LV/FastFuncs")[repo]), Javascript Chess AI w/ Minimax (#link("https://github.com/LV/LuisitoChess")[repo]), Interactive Coding for Kids using NLP (#link("https://github.com/LV/C-Is-For-Coding")[repo]), Prototype Bitcoin Payment Processor (#link("https://github.com/LV/bitlink-prototype")[repo])
+  - *Key Projects*: #link("https://github.com/LV/FastFuncs")[Automatic Function Composition], #link("https://github.com/LV/LuisitoChess")[Javascript Chess AI via Minimax], #link("https://github.com/LV/C-Is-For-Coding")[Interactive Coding Environment for Kids using NLP], #link("https://github.com/LV/bitlink-prototype")[Prototype Bitcoin-to-Fiat Payment Processor]
   - *Awards*: Blockathon 2019 Champion, Sauder Entrepreneurial Prediction Market 2022 Champion
   - *Extracurricular Activities*: Ilios Investment Club - Head of Technology
 
@@ -110,4 +111,4 @@
 #text(14pt, weight: "bold")[Skills]
 #line(length: 100%, stroke: 0.5pt)
   - *Fluent Languages*: English, Spanish
-  - *Personal Interests*: Football - Center Forward (Singapore Div 1 Champion, Vancouver Div 2 Champion), Basketball - Point Guard (Singapore U21 Club Champion), Golf (18 Handicap), Chess (2000 ELO on Lichess bullet)
+  - *Personal Interests*: Football - Center Forward (Singapore Div 1 Champion, Vancouver Div 2 Champion), Basketball - Point Guard (Singapore U21 Club Champion), Golf (18 GHIN Handicap), Chess (2000 ELO on Lichess Bullet)
