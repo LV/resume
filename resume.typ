@@ -12,7 +12,7 @@
 #align(left)[
   #set par(leading: 0.5em)
   #block[
-    #text(20pt, weight: "bold")[Luis Victoria]
+    #text(24pt, weight: "bold")[Luis Victoria]
     #linebreak()
     #text(9.5pt)[#link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] | +1 (929) 420-8800 | #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] | #link("https://github.com/lv")[github.com/lv]]
   ]
@@ -37,7 +37,7 @@
     #text(style: "italic")[New York, NY]
   ]
 )
-  - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250 max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
+  - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250ms max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
   - *Global On-call Lead*: Acted as the primary contact for the Ticker Plant system during 24/7 on-call rotations, leading remediation processes for critical incidents like exchange outages, hardware failures, and performing synchronization tasks to minimize client impact.
   - *Capacity Planning*: Spearheaded evaluations for transitioning disaster recovery infrastructure from 36-core to 56-core machines, leading to projected savings of \~\$8 million USD while meeting compliance standards.
   - *Latency Monitoring Enhancements*: Singlehandedly rewrote and designed a critical high performance per-tick instrumentation tool in C++, delivering real-time tick path latencies with minimal runtime overhead.
