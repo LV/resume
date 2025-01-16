@@ -8,27 +8,21 @@
   
   // Header
   align(center)[
-    #text(17pt, weight: "bold")[#name]
-    #v(0.1em)
-    #text(11pt)[
-      #email · #phone
+    #set par(leading: 0.5em)
+    #block[
+      #text(17pt, weight: "bold")[#name]
+      #linebreak()
+      #text(11pt)[#email · #phone]
     ]
   ]
-  
-  // Line separator
-  line(length: 100%, stroke: 0.5pt)
-  v(2em)
   
   // Content
   content
 }
 
 #let section(title) = {
-  v(1em)
   text(14pt, weight: "bold")[#title]
-  v(0.5em)
   line(length: 100%, stroke: 0.5pt)
-  v(1em)
 }
 
 #let entry(title, organization, date, description) = {
@@ -39,14 +33,13 @@
     align(right)[#date]
   )
   text(style: "italic")[#organization]
-  v(0.5em)
   description
-  v(1em)
 }
 
 // Document content
 #cv("Luis Victoria", "luisvictoriaperez@gmail.com", "+1 (929) 420-8800", [
   #section("Work Experience")
+  
   #entry(
     "Production Engineer",
     "Bloomberg LP",
@@ -61,6 +54,7 @@
       - *Proactive Automation*: Automated various quality control procedures to verify machine synchronization for non-standardized production environments, reducing manual processes averaging 8 minutes down to a single click.
     ]
   )
+  
   #entry(
     "Quantitative Developer Intern",
     "Farringdon Asset Management",
@@ -73,6 +67,7 @@
   )
 
   #section("Education")
+  
   #entry(
     "Business and Computer Science",
     "University of British Columbia",
