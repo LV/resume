@@ -4,7 +4,7 @@
   set page(
     margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm),
   )
-  set text(font: "New Computer Modern", size: 11pt)
+  set text(font: "New Computer Modern", size: 9.5pt)
   
   // Header
   align(center)[
@@ -87,7 +87,7 @@
 
   #section("Voluteer Work")
   - *Fundación ManoloNet*: Developed a Codecademy-like webpage via Django, teaching prospective blind teenagers Python.
-  - *Club de Niños y Niñas de Mexico*: Implemented HTTPS using Let's Encrypt and prototyped a redesigned front page.
+  - *Club de Niños y Niñas de México*: Implemented HTTPS using Let's Encrypt and prototyped a redesigned front page.
   
   #section("Skills")
   - *Fluent Languages*: English, Spanish
