@@ -27,7 +27,11 @@
   columns: (auto, 1fr),
   gutter: 1em,
   [*Production Engineer*],
-  align(right)[Feb 2023 - Present]
+  align(right)[
+    Feb 2023 - Present
+    #linebreak()
+    #text(style: "italic")[New York, NY]
+  ]
 )
 #text(style: "italic")[Bloomberg LP]
   - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250 max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
@@ -43,7 +47,11 @@
   columns: (auto, 1fr),
   gutter: 1em,
   [*Quantitative Developer Intern*],
-  align(right)[May 2019 - Aug 2019]
+  align(right)[
+    May 2019 - Aug 2019
+    #linebreak()
+    #text(style: "italic")[Singapore]
+  ]
 )
 #text(style: "italic")[Farringdon Asset Management]
   - *Back-testing Enhancements*: Extended the firm's back-testing engine to include cryptocurrency asset analysis by integrating new data pipelines using CCTX and Binance, enabling quantitative evaluation of crypto markets.
@@ -58,7 +66,11 @@
   columns: (auto, 1fr),
   gutter: 1em,
   [*Business and Computer Science*],
-  align(right)[Sep 2018 - Dec 2022]
+  align(right)[
+    Sep 2018 - Dec 2022
+    #linebreak()
+    #text(style: "italic")[Vancouver, BC]
+  ]
 )
 #text(style: "italic")[University of British Columbia]
   - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Advanced Software Construction, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III, Information Systems Analysis & Design
