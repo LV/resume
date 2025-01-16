@@ -48,7 +48,7 @@
 )
   - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250ms max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
   - *Global On-call Lead*: Acted as the primary contact for the Ticker Plant system during 24/7 on-call rotations, leading remediation processes for critical incidents like exchange outages, hardware failures, and performing synchronization tasks to minimize client impact.
-  - *Capacity Planning*: Spearheaded evaluations for transitioning disaster recovery infrastructure from 36-core to 56-core machines, leading to projected savings of \~\$8 million USD while meeting compliance standards.
+  - *Capacity Planning*: Spearheaded evaluations for transitioning disaster recovery infrastructure from 36-core to 56-core machines instead of adding more machines per cluster, leading to projected savings of \~\$8 million USD.
   - *Latency Monitoring Enhancements*: Singlehandedly rewrote and designed a critical high performance per-tick instrumentation tool in C++, delivering real-time tick path latencies with minimal runtime overhead.
   - *Software Rollout Stability*: Co-developed a product to identify and mitigate performance regressions from bad deployments by leveraging Bayesian Online Changepoint Detection, enhancing confidence in shipping and catching regressions in new tick-type rollouts.
   - *Storage Prediction Tool*: Independently designed and implemented a Python tool to forecast machine storage use, deployed across 750 production machines to proactively set off alarms before reaching capacity limits.
