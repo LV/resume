@@ -7,12 +7,12 @@
   set text(font: "New Computer Modern", size: 9.5pt)
   
   // Header
-  align(center)[
+  align(left)[
     #set par(leading: 0.5em)
     #block[
-      #text(17pt, weight: "bold")[#name]
+      #text(20pt, weight: "bold")[#name]
       #linebreak()
-      #text(11pt)[#email · #phone]
+      #text(9.5pt)[#email | #phone]
     ]
   ]
   
