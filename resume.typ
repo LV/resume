@@ -48,10 +48,10 @@
   ]
 )
   - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250ms max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
-  - *Global On-call Lead*: Acted as the primary contact for the Ticker Plant system during 24/7 on-call rotations, leading remediation processes for critical incidents like exchange outages, hardware failures, and performing synchronization tasks to minimize client impact.
+  - *Global On-call Lead*: Led 24/7 on-call rotations, resolving critical incidents such as exchange outages and system failures to mitigate client impact.
   - *Capacity Planning*: Spearheaded evaluations for transitioning disaster recovery infrastructure from 36-core to 56-core machines instead of adding more machines per cluster, leading to projected savings of \~\$8 million USD.
-  - *Latency Monitoring Enhancements*: Singlehandedly rewrote and designed a critical high performance per-tick instrumentation tool in C++, delivering real-time tick path latencies with minimal runtime overhead.
-  - *Software Rollout Stability*: Co-developed a product to identify and mitigate performance regressions from bad deployments by leveraging Bayesian Online Changepoint Detection, enhancing confidence in shipping and catching regressions in new tick-type rollouts.
+  - *Latency Monitoring Enhancements*: Developed a per-component tick latency monitoring system in C++, replacing a legacy setup reliant on artificial metric ticks while handling \~350 billion daily ticks with negligible overhead.
+  - *Software Rollout Stability*: Co-developed a Bayesian Changepoint Detection tool to catch performance regressions pre-production (e.g., 40% database slowdown, 30% tick-type slowdown)—averting outages and increasing release confidence.
   - *Storage Prediction Tool*: Independently designed and implemented a Python tool to forecast machine storage use, deployed across 750 production machines to proactively set off alarms before reaching capacity limits.
   - *Proactive Automation*: Automated various quality control procedures to verify machine synchronization for non-standardized production environments, reducing manual processes averaging 8 minutes down to a single click.
 
@@ -72,7 +72,7 @@
   ]
 )
   - *Back-testing Enhancements*: Extended the firm's back-testing engine to include cryptocurrency asset analysis by integrating new data pipelines using CCTX and Binance, enabling quantitative evaluation of crypto markets.
-  - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>
+  - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>.
   - *Technical Research*: Leveraged Bollinger Bands and Stochastic Oscillators to support quantitative decision-making on biomedical pharmaceutical startups.
 
 #v(1em)
