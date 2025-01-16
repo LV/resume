@@ -9,7 +9,7 @@
   #block[
     #text(20pt, weight: "bold")[Luis Victoria]
     #linebreak()
-    #text(9.5pt)[luisvictoriaperez\@gmail.com | +1 (929) 420-8800]
+    #text(9.5pt)[#link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] | #link("tel:+19294208800")[+1 (929) 420-8800] | #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] | #link("https://github.com/lv")[github.com/lv]]
   ]
 ]
 
@@ -41,7 +41,6 @@
   align(right)[May 2019 - Aug 2019]
 )
 #text(style: "italic")[Farringdon Asset Management]
-[
   - *Back-testing Enhancements*: Extended the firm's back-testing engine to include cryptocurrency asset analysis by integrating new data pipelines using CCTX and Binance, enabling quantitative evaluation of crypto markets.
   - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>
   - *Technical Research*: Leveraged Bollinger Bands and Stochastic Oscillators to support quantitative decision-making on biomedical pharmaceutical startups.
@@ -58,7 +57,7 @@
 )
 #text(style: "italic")[University of British Columbia]
   - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Advanced Software Construction, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III, Information Systems Analysis & Design
-  - *Key Projects*: Automatic Function Composition (repo), Javascript Chess AI w/ Minimax (repo), Interactive Coding for Kids using NLP (repo), Prototype Bitcoin Payment Processor (repo)
+  - *Key Projects*: Automatic Function Composition (#link("https://github.com/LV/FastFuncs")[repo]), Javascript Chess AI w/ Minimax (#link("https://github.com/LV/LuisitoChess")[repo]), Interactive Coding for Kids using NLP (#link("https://github.com/LV/C-Is-For-Coding")[repo]), Prototype Bitcoin Payment Processor (#link("https://github.com/LV/bitlink-prototype")[repo])
   - *Awards*: Blockathon 2019 Champion, Sauder Entrepreneurial Prediction Market 2022 Champion
   - *Extracurricular Activities*: Ilios Investment Club - Head of Technology
 
