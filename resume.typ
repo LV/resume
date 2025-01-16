@@ -49,10 +49,10 @@
 )
   - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250ms max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
   - *Global On-call Lead*: Led 24/7 on-call rotations, resolving critical incidents such as exchange outages and system failures to mitigate client impact.
-  - *Capacity Planning*: Spearheaded evaluations for transitioning disaster recovery infrastructure from 36-core to 56-core machines instead of adding more machines per cluster, leading to projected savings of \~\$8 million USD.
   - *Low-Latency Tick Instrumentation*: Developed a per-component latency instrumentation system in C++11, replacing a legacy setup reliant on artificial metric ticks while handling \~350 billion daily ticks with negligible overhead.
+  - *Capacity Planning*: Spearheaded disaster recovery evaluations using Linux cgroups to optimize resource allocation, transitioning from 36-core to 56-core machines instead of adding more machines per cluster and achieving projected savings of \~\$8 million USD.
   - *Software Rollout Stability*: Co-developed a Bayesian Changepoint Detection tool to catch performance regressions pre-production (e.g., 40% database slowdown, 30% tick-type slowdown)—averting outages and increasing release confidence.
-  - *Storage Prediction Tool*: Independently designed and implemented a Python 3 + PostgresQL tool to forecast machine storage use, deployed across 750 production machines to proactively set off alarms before reaching capacity limits.
+  - *Storage Prediction Tool*: Independently designed and implemented a Python 3 & PostgresQL tool to forecast machine storage use, deployed across 750 production machines to proactively set off alarms before reaching capacity limits.
   - *Proactive Automation*: Automated various quality control procedures to verify machine synchronization for non-standardized production environments, reducing manual processes averaging 8 minutes down to a single click.
 
 #v(0.5em)
