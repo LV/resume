@@ -2,6 +2,7 @@
 #set document(author: "Luis Victoria", title: "Curriculum Vitae")
 #set page(margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm))
 #set text(font: "New Computer Modern", size: 9.5pt)
+#set par(justify: true)
 
 
 // Override properties
@@ -23,7 +24,7 @@
   #block[
     #text(24pt, weight: "bold")[Luis Victoria]
     #linebreak()
-    #text(9.5pt)[#link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] | +1 (929) 420-8800 | #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] | #link("https://github.com/lv")[github.com/lv]]
+    #text(9.5pt)[#link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] #h(0.5em) | #h(0.5em) +1 (929) 420-8800 #h(0.5em) | #h(0.5em) #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] #h(0.5em) | #h(0.5em) #link("https://github.com/lv")[github.com/lv]]
   ]
 ]
 
