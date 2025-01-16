@@ -26,14 +26,17 @@
 #grid(
   columns: (auto, 1fr),
   gutter: 1em,
-  [*Production Engineer*],
+  align(left)[
+    *Production Engineer*
+    #linebreak()
+    Bloomberg LP
+  ],
   align(right)[
     Feb 2023 - Present
     #linebreak()
     #text(style: "italic")[New York, NY]
   ]
 )
-#text(style: "italic")[Bloomberg LP]
   - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250 max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
   - *Global On-call Lead*: Acted as the primary contact for the Ticker Plant system during 24/7 on-call rotations, leading remediation processes for critical incidents like exchange outages, hardware failures, and performing synchronization tasks to minimize client impact.
   - *Capacity Planning*: Spearheaded evaluations for transitioning disaster recovery infrastructure from 36-core to 56-core machines, leading to projected savings of \~\$8 million USD while meeting compliance standards.
@@ -46,14 +49,17 @@
 #grid(
   columns: (auto, 1fr),
   gutter: 1em,
-  [*Quantitative Developer Intern*],
+  align(left)[
+    *Quantitative Developer Intern*
+    #linebreak()
+    Farringdon Asset Management
+  ],
   align(right)[
     May 2019 - Aug 2019
     #linebreak()
     #text(style: "italic")[Singapore]
   ]
 )
-#text(style: "italic")[Farringdon Asset Management]
   - *Back-testing Enhancements*: Extended the firm's back-testing engine to include cryptocurrency asset analysis by integrating new data pipelines using CCTX and Binance, enabling quantitative evaluation of crypto markets.
   - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>
   - *Technical Research*: Leveraged Bollinger Bands and Stochastic Oscillators to support quantitative decision-making on biomedical pharmaceutical startups.
@@ -65,14 +71,17 @@
 #grid(
   columns: (auto, 1fr),
   gutter: 1em,
-  [*Business and Computer Science*],
+  align(left)[
+    *Business and Computer Science*
+    #linebreak()
+    University of British Columbia
+  ],
   align(right)[
     Sep 2018 - Dec 2022
     #linebreak()
     #text(style: "italic")[Vancouver, BC]
   ]
 )
-#text(style: "italic")[University of British Columbia]
   - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Advanced Software Construction, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III, Information Systems Analysis & Design
   - *Key Projects*: Automatic Function Composition (#link("https://github.com/LV/FastFuncs")[repo]), Javascript Chess AI w/ Minimax (#link("https://github.com/LV/LuisitoChess")[repo]), Interactive Coding for Kids using NLP (#link("https://github.com/LV/C-Is-For-Coding")[repo]), Prototype Bitcoin Payment Processor (#link("https://github.com/LV/bitlink-prototype")[repo])
   - *Awards*: Blockathon 2019 Champion, Sauder Entrepreneurial Prediction Market 2022 Champion
