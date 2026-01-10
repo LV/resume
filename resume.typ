@@ -48,13 +48,21 @@
     #text(style: "italic")[New York, NY]
   ]
 )
-  - *Latency Optimization*: Maintained strict performance targets of < 6ms median and < 250ms max latencies for 99.99% of tick data, ensuring reliable operations across a system handling \~350 billion daily ticks.
-  - *Global On-call Lead*: Led 24/7 on-call rotations, resolving critical incidents such as exchange outages and system failures to mitigate client impact.
-  - *Low-Latency Tick Instrumentation*: Developed a per-component latency instrumentation system in C++11, replacing a legacy setup reliant on artificial metric ticks while handling \~350 billion daily ticks with negligible overhead.
-  - *Capacity Planning*: Spearheaded disaster recovery evaluations using Linux cgroups to optimize resource allocation, transitioning from 36-core to 56-core machines instead of adding more machines per cluster and achieving projected savings of \~\$8 million USD.
-  - *Software Rollout Stability*: Co-developed a Bayesian Changepoint Detection tool to catch performance regressions pre-production (e.g., 40% database slowdown, 30% tick-type slowdown)—averting outages and increasing release confidence.
-  - *Storage Prediction Tool*: Independently designed and implemented a Python 3 & PostgresQL tool to forecast machine storage use, deployed across 750 production machines to proactively set off alarms before reaching capacity limits.
-  - *Proactive Automation*: Automated various quality control procedures to verify machine synchronization for non-standardized production environments, reducing manual processes averaging 8 minutes down to a single click.
+Overseeing performance, scalability, and reliability of Bloomberg’s Market Data Platform across its entire production fleet, spanning Feeds (exchange connectivity/parsing) and the Ticker Plant (real-time price data storage/streaming). Focused on end-to-end latencies and capacity. The infrastructure ingests and standardizes exchange data before streaming it to clients/internal systems. Handles \>700B ticks per day during extreme market volatility without outages, maintaining strict SLAs (\<6ms median, \<250ms at 99.9%).
+
+- *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based time-stamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with µs resolution, enabling latency regression detection and optimization with near-zero overhead.
+
+- *Performance Regression Detection*: Applied #link("https://arxiv.org/abs/0710.3742")[Bayesian Online Changepoint Detection] within Argo-orchestrated workflows to statistically flag anomalous times across 30,000+ tick processor instances, cutting remediation time from days to \<24 hours.
+
+- *Predictive Capacity Forecasting*: Built a Python system capturing filesystem metadata on 1,000+ Ticker Plant machines to project storage usage 14 days ahead. During Liberation Day tariffs (extreme market activity), the system autonomously triggered proactive alerts, preventing preventing catastrophic data loss.
+
+- *Disaster Recovery Performance Resilience*: Designed stress-testing framework to evaluate 56-core for OPRA DR compliance, avoiding failover latency spikes and potentially saving millions in infrastructure costs.
+
+- *Exchange Onboarding*: Concuct CPU, memory, and storage projections when onboaring new global exchanges to ensure scalability in Ticker Plant clusters without SLO breaches.
+
+- *Cluster Load Balancing*: Executed targeted cluster splits to offload overloaded machines, eliminating persistent SLO breaches with minimal client disruption.
+
+- *Crisis & Oncall Leadership*: Oncall 8hrs every 1.5 weeks as part of 24/7 follow-the-sun coverage, mitigating client impact, isolating bad data, performing live syncs, and leading organization-wide outage recovery efforts under intense market conditions.
 
 #v(0.5em)
 // Farringdon Asset Management Entry
@@ -101,16 +109,9 @@
   - *Extracurricular Activities*: Ilios Investment Club - Head of Technology.
 
 #v(1em)
-// Volunteer Work Section
-#text(14pt, weight: "bold")[Volunteer Work]
-#line(length: 100%, stroke: 0.5pt)
-  - *Fundación ManoloNet*: Developed a Codecademy-like webpage via Django, teaching prospective blind teenagers Python.
-  - *Club de Niños y Niñas de México*: Implemented HTTPS using Let's Encrypt and prototyped a redesigned front page.
-
-#v(1em)
 // Skills Section
 #text(14pt, weight: "bold")[Skills]
 #line(length: 100%, stroke: 0.5pt)
   - *Fluent Languages*: English, Spanish.
-  - *Technologies*: C++11, Python 3 (NumPy, Pandas), PostgresQL, Docker, Git, Unix Commands, Bloomberg Terminal
-  - *Personal Interests*: Football - Center Forward (Singapore Div 1 Champion, Vancouver Div 2 Champion), Basketball - Point Guard (Singapore U21 Club Champion), Golf (18 GHIN Handicap), Chess (2000 ELO on Lichess Bullet).
+  - *Technologies*: C++20, Python 3, Bloomberg Terminal.
+  - *Personal Interests*: Football (Soccer) - Center Forward & Goal Keeper (Champion in Singapore Div 1 & Vancouver Div 2), Basketball - Point Guard (Singapore U21 Club Champion), Golf (#link("https://www.ghin.com/golfer-lookup/golfer/53616c7465645f5f964e0abb7685ebdae96548cca77d43d431d31cd32b1bc7c8/club/23461")[19.3 GHIN Handicap]), Chess (#link("https://lichess.org/@/lavp")[2000 ELO on Lichess Bullet]).
