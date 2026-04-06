@@ -58,7 +58,7 @@ Overseeing performance, scalability, and reliability of Bloomberg’s Market Dat
 
 - *Disaster Recovery Performance Resilience*: Designed stress-testing framework to evaluate 56-core for OPRA DR compliance, avoiding failover latency spikes and potentially saving millions in infrastructure costs.
 
-- *Exchange Onboarding*: Concuct CPU, memory, and storage projections when onboaring new global exchanges to ensure scalability in Ticker Plant clusters without SLO breaches.
+- *Exchange Onboarding*: Conduct CPU, memory, and storage projections when onboarding new global exchanges to ensure scalability in Ticker Plant clusters without SLO breaches.
 
 - *Cluster Load Balancing*: Executed targeted cluster splits to offload overloaded machines, eliminating persistent SLO breaches with minimal client disruption.
 
