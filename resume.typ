@@ -48,7 +48,7 @@
     #text(style: "italic")[New York, NY]
   ]
 )
-Overseeing performance, scalability, and reliability of Bloomberg’s Market Data Platform across its entire production fleet, spanning Feeds (exchange connectivity/parsing) and the Ticker Plant (real-time price data storage/streaming). Focused on end-to-end latencies and capacity. The infrastructure ingests and standardizes exchange data before streaming it to clients/internal systems. Handles \>700B ticks per day during extreme market volatility without outages, maintaining strict SLAs (\<6ms median, \<250ms at 99.9%).
+Oversaw performance, scalability, and reliability of Bloomberg’s Market Data Platform across its entire production fleet, spanning Feeds (exchange connectivity/parsing) and the Ticker Plant (real-time price data storage/streaming). Focused on end-to-end latencies and capacity. The infrastructure ingested and standardized exchange data before streaming it to clients/internal systems. Handled \>700B ticks per day during extreme market volatility without outages, maintaining strict SLAs (\<6ms median, \<250ms at 99.9%).
 
 - *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based time-stamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with µs resolution, enabling latency regression detection and optimization with near-zero overhead.
 
