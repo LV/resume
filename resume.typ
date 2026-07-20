@@ -54,7 +54,7 @@ Oversaw performance, scalability, and reliability of Bloomberg’s Market Data P
 
 - *Performance Regression Detection*: Applied #link("https://arxiv.org/abs/0710.3742")[Bayesian Online Changepoint Detection] within Argo-orchestrated workflows to statistically flag anomalous times across 30,000+ tick processor instances, cutting remediation time from days to \<24 hours.
 
-- *Predictive Capacity Forecasting*: Diagnosed and rewrote a broken, fragile storage-monitoring pipeline (originally reliant on legacy log scraping) as a two part system: a fleet-wide filesystem scanner logging structured per-database storage and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, preventing catastrophic data loss across 1,000+ machines.
+- *Predictive Capacity Forecasting*: Diagnosed and rewrote a broken, fragile storage-monitoring pipeline (originally reliant on legacy log scraping) as a two part Python system: a fleet-wide filesystem scanner logging structured per-database storage and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, preventing catastrophic data loss across 1,000+ machines.
 
 - *Disaster Recovery Performance Resilience*: Automated a previously manual process for reassigning load to/from the cluster's real-time broadcast ('monitor') machine during data center failover events, removing error-prone manual on-call intervention. Benchmarked CPU thread-pinning thresholds to guarantee broadcast continuity under combined load while minimizing the resulting tradeoff in dropped requests, informing adoption of Linux cgroups-based CPU prioritization within the trading infrastructure stack.
 
@@ -80,7 +80,7 @@ Oversaw performance, scalability, and reliability of Bloomberg’s Market Data P
     #text(style: "italic")[Singapore]
   ]
 )
-  - *Back-testing Enhancements*: Extended the firm's back-testing engine to include cryptocurrency asset analysis by integrating new data pipelines using CCTX and Binance, enabling quantitative evaluation of crypto markets.
+  - *Back-testing Enhancements*: Extended the firm's Python-based back-testing engine to include cryptocurrency asset analysis by integrating new data pipelines using CCTX and Binance, enabling quantitative evaluation of crypto markets.
   - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>.
   - *Technical Research*: Leveraged Bollinger Bands and Stochastic Oscillators to support quantitative decision-making on biomedical pharmaceutical startups.
 
