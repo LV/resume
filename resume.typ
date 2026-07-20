@@ -103,7 +103,7 @@ Oversaw performance, scalability, and reliability of Bloomberg’s Market Data P
     #text(style: "italic")[Vancouver, BC]
   ]
 )
-  - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Advanced Software Construction, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III, Information Systems Analysis & Design.
+  - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III.
   - *Key Projects*: #link("https://github.com/LV/FastFuncs")[Automatic Function Composition], #link("https://github.com/LV/LuisitoChess")[Javascript Chess AI via Minimax], #link("https://github.com/LV/C-Is-For-Coding")[Interactive Coding Environment for Kids using NLP], #link("https://github.com/LV/bitlink-prototype")[Prototype Bitcoin-to-Fiat Payment Processor].
   - *Awards*: Blockathon 2019 Champion, Sauder Entrepreneurial Prediction Market 2022 Champion.
   - *Extracurricular Activities*: Ilios Investment Club - Head of Technology.
