@@ -105,11 +105,3 @@ Oversaw performance, scalability, and reliability of Bloomberg’s Market Data P
 )
   - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III.
   - *Sauder Trading Simulation (1st of 136 students)*: Built a Raspberry Pi bot to poll a primitive, non-matching order-book trading platform every 2 minutes, detecting and executing on crossed bid/ask orders to run an automated arbitrage, outperforming classmates' fundamentals-based strategies through market-structure exploitation alone.
-
-#v(1em)
-// Skills Section
-#text(14pt, weight: "bold")[Skills]
-#line(length: 100%, stroke: 0.5pt)
-  - *Fluent Languages*: English, Spanish.
-  - *Technologies*: C++20, Python 3, Bloomberg Terminal.
-  - *Personal Interests*: Football (Soccer) - Center Forward & Goal Keeper (Champion in Singapore Div 1 & Vancouver Div 2), Basketball - Point Guard (Singapore U21 Club Champion), Golf (#link("https://www.ghin.com/golfer-lookup/golfer/53616c7465645f5f964e0abb7685ebdae96548cca77d43d431d31cd32b1bc7c8/club/23461")[19.3 GHIN Handicap]), Chess (#link("https://lichess.org/@/lavp")[2000 ELO on Lichess Bullet]).
