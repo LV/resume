@@ -38,12 +38,12 @@
   columns: (auto, 1fr),
   gutter: 1em,
   align(left)[
-    *Production Engineer*
+    *Software Engineer — Site Reliability & Performance, Ticker Plant*
     #linebreak()
     Bloomberg LP
   ],
   align(right)[
-    Feb 2023 - Present
+    Feb 2023 - Jul 2026
     #linebreak()
     #text(style: "italic")[New York, NY]
   ]
