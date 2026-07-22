@@ -50,15 +50,15 @@
 )
 Oversaw performance, scalability, and reliability of Bloomberg’s Market Data Platform across its entire production fleet, spanning Feeds (exchange connectivity/parsing) and the Ticker Plant (real-time price data storage/streaming). Focused on end-to-end latencies and capacity. The infrastructure ingested and standardized exchange data before streaming it to clients/internal systems. Handled \>700B ticks per day during extreme market volatility without outages, maintaining strict SLAs (\<6ms median, \<250ms at 99.9%).
 
-- *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based time-stamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with µs resolution, enabling latency regression detection and optimization with near-zero overhead.
+- *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based time-stamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with $mu$s resolution, enabling latency regression detection and optimization with $< 10 mu$s overhead.
 
 - *Performance Regression Detection*: Applied #link("https://arxiv.org/abs/0710.3742")[Bayesian Online Changepoint Detection] within Argo-orchestrated workflows to statistically flag anomalous times across 30,000+ tick processor instances, cutting remediation time from days to \<24 hours.
 
-- *Predictive Capacity Forecasting*: Built a Python system capturing filesystem metadata on 1,000+ Ticker Plant machines to project storage usage 14 days ahead. During Liberation Day tariffs (extreme market activity), the system autonomously triggered proactive alerts, preventing preventing catastrophic data loss.
+- *Predictive Capacity Forecasting*: Diagnosed and rewrote a broken, fragile storage-monitoring pipeline (originally reliant on legacy log scraping) as a two part system: a fleet-wide filesystem scanner logging structured per-database storage and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, preventing catastrophic data loss across 1,000+ machines.
 
-- *Disaster Recovery Performance Resilience*: Designed stress-testing framework to evaluate 56-core for OPRA DR compliance, avoiding failover latency spikes and potentially saving millions in infrastructure costs.
+- *Disaster Recovery Performance Resilience*: Automated a previously manual process for reassigning load to/from the cluster's real-time broadcast ('monitor') machine during data center failover events, removing error-prone manual on-call intervention. Benchmarked CPU thread-pinning thresholds to guarantee broadcast continuity under combined load while minimizing the resulting tradeoff in dropped requests, informing adoption of Linux cgroups-based CPU prioritization within the trading infrastructure stack.
 
-- *Exchange Onboarding*: Conduct CPU, memory, and storage projections when onboarding new global exchanges to ensure scalability in Ticker Plant clusters without SLO breaches.
+- *Exchange Onboarding*: Assessed CPU, memory, and storage capacity for Ticker Plant clusters ahead of onboarding new global exchanges, using historical telemetry patterns and comparative load analysis against existing exchanges to gauge scalability and avoid SLO breaches.
 
 - *Cluster Load Balancing*: Executed targeted cluster splits to offload overloaded machines, eliminating persistent SLO breaches with minimal client disruption.
 
