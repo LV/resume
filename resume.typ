@@ -104,9 +104,7 @@ Oversaw performance, scalability, and reliability of Bloomberg’s Market Data P
   ]
 )
   - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III.
-  - *Key Projects*: #link("https://github.com/LV/FastFuncs")[Automatic Function Composition], #link("https://github.com/LV/LuisitoChess")[Javascript Chess AI via Minimax], #link("https://github.com/LV/C-Is-For-Coding")[Interactive Coding Environment for Kids using NLP], #link("https://github.com/LV/bitlink-prototype")[Prototype Bitcoin-to-Fiat Payment Processor].
-  - *Awards*: Blockathon 2019 Champion, Sauder Entrepreneurial Prediction Market 2022 Champion.
-  - *Extracurricular Activities*: Ilios Investment Club - Head of Technology.
+  - *Sauder Trading Simulation (1st of 136 students)*: Build a Raspberry Pi bot to poll a primitive, non-matching order-book trading platform every 2 minutes, detecting and executing on crossed bid/ask orders to run an automated arbitrage, outperforming classmates' fundamentals-based strategies through market-structure exploitation alone.
 
 #v(1em)
 // Skills Section
