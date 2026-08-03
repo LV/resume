@@ -24,7 +24,7 @@
   #block[
     #text(24pt, weight: "bold")[Luis Victoria]
     #linebreak()
-    #text(9.5pt)[New York City #h(0.5em) | #h(0.5em) #link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] #h(0.5em) | #h(0.5em) +1 (929) 420-8800 #h(0.5em) | #h(0.5em) #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] #h(0.5em) | #h(0.5em) #link("https://github.com/lv")[github.com/lv]]
+    #text(9.5pt)[New York City #h(0.5em) | #h(0.5em) #link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] #h(0.5em) | #h(0.5em) +1 (929) 420-8800 #h(0.5em) | #h(0.5em) #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] #h(0.5em) | #h(0.5em) #link("https://github.com/lv")[github.com/lv] | #h(0.5em) #link("https://luis.vi")[luis.vi]]
   ]
 ]
 
