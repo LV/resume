@@ -1,7 +1,7 @@
 // Set document properties
 #set document(author: "Luis Victoria", title: "Curriculum Vitae")
 #set page(margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm))
-#set text(font: "New Computer Modern", size: 10pt)
+#set text(font: "New Computer Modern", size: 11.5pt)
 #set par(justify: true)
 
 
@@ -38,7 +38,7 @@
   columns: (auto, 1fr),
   gutter: 1em,
   align(left)[
-    *Software Engineer — Market Data Platform, Site Reliability & Performance*
+    *Software Engineer — Market Data Platform, Capacity & Performance*
     #linebreak()
     Bloomberg LP
   ],
@@ -48,12 +48,12 @@
     #text(style: "italic")[New York, NY]
   ]
 )
-Worked on performance, scalability, and reliability across Bloomberg’s Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled >700B ticks/day during extreme volatility while maintaining \<6ms median and \<250ms p99.9 latency SLAs.
+Engineered performance, scalability, and reliability systems across Bloomberg’s Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6ms median and \<250ms p99.9 latency SLAs.
 
-- *Predictive Capacity Forecasting*: Rewrote a fragile legacy log-scraping storage monitor as a two-part Python system: a fleet-wide scanner writing structured database and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, protecting 1,000+ machines from storage-exhaustion/data-loss risk.
-- *Performance Regression Detection*: Applied #link("https://arxiv.org/abs/0710.3742")[Bayesian Online Changepoint Detection] within Argo-orchestrated workflows to statistically flag anomalous times across 30,000+ tick processor instances, cutting remediation time from days to \<24 hours.
-- *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based time-stamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with $mu$s resolution, enabling latency regression detection and optimization with $< 10 mu$s overhead.
-- *Disaster Recovery Performance Resilience*: Automated load reassignment to/from the cluster's real-time broadcast ('monitor') machine during data center failover, removing manual on-call intervention. Benchmarked CPU thread-pinning under combined load, informing Linux cgroups-based CPU prioritization to preserve broadcast continuity while controlling dropped requests.
+- *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based timestamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with $mu$s resolution, enabling latency regression detection and optimization with $< 10 mu$s overhead.
+- *Predictive Capacity Forecasting*: Rewrote a fragile legacy log-scraping storage monitor as a two-part Python system: a fleet-wide scanner writing structured per-database storage and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, protecting 1,000+ machines from storage-exhaustion/data-loss risk.
+- *Performance Regression Detection*: Applied Bayesian Online Changepoint Detection within Argo-orchestrated workflows to statistically flag anomalous times across 30,000+ tick processor instances, cutting remediation time from days to \<24 hours.
+- *Disaster Recovery Performance Resilience*: Automated load reassignment during data-center failover; benchmarked CPU thread-pinning under combined load, informing Linux cgroups-based CPU prioritization to preserve broadcast continuity while controlling dropped requests.
 - *Capacity & Load Management*: Assessed CPU, memory, and storage capacity ahead of onboarding new global exchanges and executed targeted cluster splits to offload overloaded machines, avoiding or eliminating SLO breaches with minimal client disruption.
 
 #v(0.5em)
@@ -72,9 +72,8 @@ Worked on performance, scalability, and reliability across Bloomberg’s Market 
     #text(style: "italic")[Singapore]
   ]
 )
-  - *Back-testing Enhancements*: Extended the firm's Python-based back-testing engine to include cryptocurrency asset analysis by integrating new data pipelines using CCXT and Binance, enabling quantitative evaluation of crypto markets.
+  - *Back-testing Enhancements*: Extended the firm's Python backtesting engine to support cryptocurrency analysis, integrating market-data pipelines through CCXT and Binance.
   - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>.
-  - *Technical Research*: Leveraged Bollinger Bands and Stochastic Oscillators to support quantitative decision-making on biomedical pharmaceutical startups.
 
 #v(1em)
 // Education Section
@@ -95,5 +94,5 @@ Worked on performance, scalability, and reliability across Bloomberg’s Market 
     #text(style: "italic")[Vancouver, BC]
   ]
 )
-  - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Advanced Relational Databases, Theory of Computation, Functional & Logic Programming, Matrix Algebra, Empirical Economics, Calculus III.
-  - *Sauder Trading Simulation (1st of 136 students)*: Built a Raspberry Pi bot to poll a primitive, non-matching order-book trading platform every 2 minutes, detecting and executing on crossed bid/ask orders to run an automated arbitrage, outperforming classmates' fundamentals-based strategies through market-structure exploitation alone.
+  - *Relevant Coursework*: Machine Learning & Data Mining, Advanced Algorithmic Design, Matrix Algebra, Empirical Economics, Calculus III, Advanced Relational Databases.
+  - *Sauder Trading Simulation*: Built a Raspberry Pi arbitrage bot for a primitive non-matching order-book simulation, polling every two minutes and executing crossed bid/ask opportunities; placed 1st of 136 students.
