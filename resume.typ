@@ -48,13 +48,13 @@
     #text(style: "italic")[New York, NY]
   ]
 )
-Engineered performance, capacity, scalability, and reliability systems across Bloomberg’s Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6ms median and \<250ms p99.9 latency SLAs.
+Engineered data, performance, capacity, scalability, and reliability systems across Bloomberg’s Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6ms median and \<250ms p99.9 latency SLAs.
 
 - *Predictive Capacity Forecasting*: Rewrote a fragile legacy log-scraping storage monitor as a two-part Python system: a fleet-wide scanner writing structured per-database storage and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, protecting 1,000+ machines from storage-exhaustion/data-loss risk.
 - *Performance Regression Detection*: Applied Bayesian Online Changepoint Detection within Argo-orchestrated workflows to statistically flag anomalous times across 30,000+ tick processor instances, cutting remediation time from days to \<24 hours.
 - *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based timestamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with $mu$s resolution, enabling latency regression detection and optimization with $< 10 mu$s overhead.
-- *Capacity & Load Management*: Assessed CPU, memory, and storage capacity ahead of onboarding new global exchanges and executed targeted cluster splits to offload overloaded machines, avoiding or eliminating SLO breaches with minimal client disruption.
 - *Disaster Recovery Performance Resilience*: Automated load reassignment during data-center failover; benchmarked CPU thread-pinning under combined load, informing Linux cgroups-based CPU prioritization to preserve broadcast continuity while controlling dropped requests.
+- *Capacity & Load Management*: Assessed CPU, memory, and storage capacity ahead of onboarding new global exchanges and executed targeted cluster splits to offload overloaded machines, avoiding or eliminating SLO breaches with minimal client disruption.
 
 #v(0.5em)
 // Farringdon Asset Management Entry
