@@ -82,8 +82,8 @@ Engineered data, performance, capacity, scalability, and reliability systems acr
   dates: [May 2019 -- Aug 2019],
   location: [Singapore],
 )
-  - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>.
-  - *Backtesting Enhancements*: Extended the firm's Python backtesting engine to support cryptocurrency analysis, integrating market-data pipelines through CCXT and Binance.
+- *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>.
+- *Backtesting Enhancements*: Extended the firm's Python backtesting engine to support cryptocurrency analysis, integrating market-data pipelines through CCXT and Binance.
 
 
 #section[Education]
@@ -94,8 +94,8 @@ Engineered data, performance, capacity, scalability, and reliability systems acr
   dates: [Sep 2018 -- Dec 2022],
   location: [Vancouver, BC],
 )
-  - *Relevant Coursework*: Machine Learning & Data Mining, Matrix Algebra, Calculus III, Empirical Economics, Advanced Algorithmic Design, Advanced Relational Databases.
-  - *Sauder Trading Simulation*: Built a Raspberry Pi arbitrage bot for a primitive non-matching #box[order-book] simulation, polling every two minutes and executing crossed bid/ask opportunities; placed 1st of 136 students.
+- *Relevant Coursework*: Machine Learning & Data Mining, Matrix Algebra, Calculus III, Empirical Economics, Advanced Algorithmic Design, Advanced Relational Databases.
+- *Sauder Trading Simulation*: Built a Raspberry Pi arbitrage bot for a primitive non-matching #box[order-book] simulation, polling every two minutes and executing crossed bid/ask opportunities; placed 1st of 136 students.
 
 
 #section[Skills]
