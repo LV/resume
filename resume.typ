@@ -1,7 +1,7 @@
 // Set document properties
 #set document(author: "Luis Victoria", title: "Curriculum Vitae")
 #set page(margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm))
-#set text(font: "New Computer Modern", size: 11.5pt)
+#set text(font: "New Computer Modern", size: 11pt)
 #set text(hyphenate: false)
 #set par(justify: true)
 
@@ -95,7 +95,7 @@ Engineered data, performance, capacity, scalability, and reliability systems acr
   location: [Vancouver, BC],
 )
 - *Relevant Coursework*: Machine Learning & Data Mining, Matrix Algebra, Calculus III, Empirical Economics, Advanced Algorithmic Design, Advanced Relational Databases.
-- *Sauder Trading Simulation*: Built a Raspberry Pi arbitrage bot for a primitive non-matching #box[order-book] simulation, polling every two minutes and executing crossed bid/ask opportunities; placed 1st of 136 students.
+- *Sauder Trading Simulation*: Built a Raspberry Pi arbitrage bot for a non-matching #box[order-book] simulation, polling every 2~min and executing crossed bid/ask opportunities; placed 1st of 136 students.
 
 
 #section[Skills]
