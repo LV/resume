@@ -19,6 +19,32 @@
 }
 
 
+// Helpers
+#let section-gap = 0.5em
+#let entry-gap = 0.5em
+
+#let section(title) = {
+  v(section-gap)
+  text(14pt, weight: "bold", title)
+  line(length: 100%, stroke: 0.5pt)
+}
+
+#let entry(title: none, org: none, dates: none, location: none) = grid(
+  columns: (auto, 1fr),
+  gutter: 1em,
+  align(left)[
+    #strong(title)
+    #linebreak()
+    #org
+  ],
+  align(right)[
+    #dates
+    #linebreak()
+    #text(style: "italic", location)
+  ],
+)
+
+
 // Header
 #align(left)[
   #set par(leading: 0.5em)
@@ -29,24 +55,15 @@
   ]
 ]
 
-// Body
-#v(0.5em)
-#text(14pt, weight: "bold")[Work Experience]
-#line(length: 100%, stroke: 0.5pt)
 
-#grid(
-  columns: (auto, 1fr),
-  gutter: 1em,
-  align(left)[
-    *Software Engineer — Market Data Platform, Capacity & Performance*
-    #linebreak()
-    Bloomberg LP
-  ],
-  align(right)[
-    Feb 2023 -- Jul 2026
-    #linebreak()
-    #text(style: "italic")[New York, NY]
-  ]
+// Body
+#section[Work Experience]
+
+#entry(
+  title: [Software Engineer — Market Data Platform, Capacity & Performance],
+  org: [Bloomberg LP],
+  dates: [Feb 2023 -- Jul 2026],
+  location: [New York, NY],
 )
 Engineered data, performance, capacity, scalability, and reliability systems across Bloomberg’s Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6~ms median and \<250~ms p99.9 latency SLAs.
 
@@ -57,41 +74,31 @@ Engineered data, performance, capacity, scalability, and reliability systems acr
 - *Capacity Planning & Cluster Rollouts*: Assessed CPU, memory, and storage capacity ahead of onboarding new global exchanges; owned staged rollouts of cluster splits and new clusters across regions, offloading overloaded machines and avoiding SLO breaches with minimal client disruption.
 - *Disaster Recovery Performance Resilience*: Automated load reassignment during data-center failover; benchmarked CPU thread-pinning under combined load, informing Linux cgroups-based CPU prioritization to preserve broadcast continuity while controlling dropped requests.
 
-#v(0.5em)
-#grid(
-  columns: (auto, 1fr),
-  gutter: 1em,
-  align(left)[
-    *Quantitative Developer Intern*
-    #linebreak()
-    Farringdon Asset Management
-  ],
-  align(right)[
-    May 2019 -- Aug 2019
-    #linebreak()
-    #text(style: "italic")[Singapore]
-  ]
+#v(entry-gap)
+
+#entry(
+  title: [Quantitative Developer Intern],
+  org: [Farringdon Asset Management],
+  dates: [May 2019 -- Aug 2019],
+  location: [Singapore],
 )
   - *Automation with Bloomberg API*: Reduced time to generate client portfolio analysis by 50% for the portfolio management team using information from PORT\<GO\>.
   - *Backtesting Enhancements*: Extended the firm's Python backtesting engine to support cryptocurrency analysis, integrating market-data pipelines through CCXT and Binance.
 
-#v(1em)
-#text(14pt, weight: "bold")[Education]
-#line(length: 100%, stroke: 0.5pt)
 
-#grid(
-  columns: (auto, 1fr),
-  gutter: 1em,
-  align(left)[
-    *Business and Computer Science*
-    #linebreak()
-    Bachelor of Commerce, Sauder School of Business, University of British Columbia
-  ],
-  align(right)[
-    Sep 2018 -- Dec 2022
-    #linebreak()
-    #text(style: "italic")[Vancouver, BC]
-  ]
+#section[Education]
+
+#entry(
+  title: [Business and Computer Science],
+  org: [Bachelor of Commerce, Sauder School of Business, University of British Columbia],
+  dates: [Sep 2018 -- Dec 2022],
+  location: [Vancouver, BC],
 )
   - *Relevant Coursework*: Machine Learning & Data Mining, Matrix Algebra, Calculus III, Empirical Economics, Advanced Algorithmic Design, Advanced Relational Databases.
   - *Sauder Trading Simulation*: Built a Raspberry Pi arbitrage bot for a primitive non-matching #box[order-book] simulation, polling every two minutes and executing crossed bid/ask opportunities; placed 1st of 136 students.
+
+
+#section[Skills]
+
+*Languages*: C++20, Python, [Go, SQL, ...] \
+*Infrastructure & Tools*: Linux (cgroups), Argo, [Kubernetes, Grafana, Prometheus, kdb+/q, Git, ...]
