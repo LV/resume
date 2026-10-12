@@ -103,4 +103,4 @@ Engineered data, performance, capacity, scalability, and reliability systems acr
 #section[Skills]
 
 *Programming Languages*: C++20, Python, SQL (PostgreSQL) \
-*Tools*: Linux (cgroups), Grafana, Humio (LogScale), Jenkins, Git, pytest, pydantic, uv, Ruff, Bloomberg Terminal
+*Tools*: Linux, Grafana, Humio (LogScale), Jenkins, Git, pytest, pydantic, uv, Ruff, Bloomberg Terminal
