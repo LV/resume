@@ -1,5 +1,5 @@
 // Set document properties
-#set document(author: "Luis Victoria", title: "Luis Victoria - Resume")
+#set document(author: "Luis Victoria", title: "Luis Victoria - Resume", date: none)
 #set page(margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm))
 #set text(font: "New Computer Modern", size: 11pt)
 #set text(hyphenate: false)
