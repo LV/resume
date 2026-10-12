@@ -67,7 +67,7 @@
   dates: [Feb 2023 -- Jul 2026],
   location: [New York, NY],
 )
-Engineered data, performance, capacity, scalability, and reliability systems across Bloomberg’s Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6~ms median and \<250~ms p99.9 latency SLAs.
+Engineered performance, capacity, and reliability systems for Bloomberg’s latency-sensitive, distributed Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6~ms median and \<250~ms p99.9 latency SLAs.
 
 - *Performance Regression Detection*: Applied Bayesian Online Changepoint Detection within Argo Workflows to statistically flag anomalous processing latencies across 30,000+ tick processor instances, cutting remediation time from days to \<24~hours.
 - *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based timestamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with #sym.mu;s resolution, enabling latency regression detection and optimization with \<10~#sym.mu;s overhead.
