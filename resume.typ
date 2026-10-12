@@ -1,5 +1,5 @@
 // Set document properties
-#set document(author: "Luis Victoria", title: "Curriculum Vitae")
+#set document(author: "Luis Victoria", title: "Luis Victoria - Resume")
 #set page(margin: (left: 1cm, right: 1cm, top: 1cm, bottom: 1cm))
 #set text(font: "New Computer Modern", size: 11pt)
 #set text(hyphenate: false)
@@ -22,6 +22,7 @@
 // Helpers
 #let section-gap = 0.5em
 #let entry-gap = 0.5em
+#let sep = [#h(0.1em)|#h(0.1em)]
 
 #let section(title) = {
   v(section-gap)
@@ -46,12 +47,13 @@
 
 
 // Header
-#align(left)[
+#align(center)[
   #set par(leading: 0.5em)
   #block[
     #text(24pt, weight: "bold")[Luis Victoria]
     #linebreak()
-    #text(10pt)[New York City #h(0.5em) | #h(0.5em) #link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] #h(0.5em) | #h(0.5em) +1 (929) 420-8800 #h(0.5em) | #h(0.5em) #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] #h(0.5em) | #h(0.5em) #link("https://github.com/lv")[github.com/lv]]
+    #text(10pt)[New York, NY #sep US~Citizen #sep (929) 420-8800 #sep #link("mailto:luisvictoriaperez@gmail.com")[luisvictoriaperez\@gmail.com] \
+    #link("https://luis.vi")[luis.vi] #sep #link("https://www.linkedin.com/in/luisvictoria/")[linkedin.com/in/luisvictoria] #sep #link("https://github.com/lv")[github.com/lv]]
   ]
 ]
 
@@ -67,7 +69,7 @@
 )
 Engineered data, performance, capacity, scalability, and reliability systems across Bloomberg’s Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6~ms median and \<250~ms p99.9 latency SLAs.
 
-- *Performance Regression Detection*: Applied Bayesian Online Changepoint Detection within #box[Argo-orchestrated] workflows to statistically flag anomalous processing latencies across 30,000+ tick processor instances, cutting remediation time from days to \<24~hours.
+- *Performance Regression Detection*: Applied Bayesian Online Changepoint Detection within Argo workflows to statistically flag anomalous processing latencies across 30,000+ tick processor instances, cutting remediation time from days to \<24~hours.
 - *Latency Instrumentation Overhaul*: Authored a C++20 envelope-based timestamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with #sym.mu;s resolution, enabling latency regression detection and optimization with \<10~#sym.mu;s overhead.
 - *Predictive Capacity Forecasting*: Rewrote a fragile legacy log-scraping storage monitor as a two-part Python system: a fleet-wide scanner writing structured per-database storage and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, protecting 1,000+ machines from storage-exhaustion/data-loss risk.
 - *Production & Incident Ownership*: On-call engineer in 24/7 follow-the-sun rotation for Bloomberg’s Market Data Platform; isolated bad data, performed live synchronization and recovery, and drove #box[root-cause] analysis for major outages under volatile market conditions.
@@ -100,5 +102,5 @@ Engineered data, performance, capacity, scalability, and reliability systems acr
 
 #section[Skills]
 
-*Languages*: C++20, Python, [Go, SQL, ...] \
-*Infrastructure & Tools*: Linux (cgroups), Argo, [Kubernetes, Grafana, Prometheus, kdb+/q, Git, ...]
+*Programming Languages*: C++20, Python, SQL (PostgreSQL) \
+*Tools*: Linux (cgroups), Grafana, Humio (LogScale), Jenkins, Git, pytest, pydantic, uv, Ruff, Bloomberg Terminal
