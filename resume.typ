@@ -67,13 +67,13 @@
   dates: [Feb 2023 -- Jul 2026],
   location: [New York, NY],
 )
-Engineered performance, capacity, and reliability systems for Bloomberg’s latency-sensitive, distributed Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6~ms median and \<250~ms p99.9 latency SLAs.
+Built high-performance production systems in C++ and Python for Bloomberg’s latency-sensitive, distributed Market Data Platform, spanning Feeds and the Ticker Plant. The platform handled \>700B ticks/day during extreme volatility while maintaining \<6~ms median and \<250~ms p99.9 latency SLAs.
 
-- *Capacity Planning & Cluster Rollouts*: Assessed CPU, memory, and storage headroom ahead of onboarding new global exchanges; owned staged multi-region rollouts of cluster splits and new clusters, rebalancing workloads off overloaded machines to avoid SLO breaches with minimal client disruption.
-- *Workload Prioritization & Failover*: Automated load reassignment across data centers during failover; benchmarked CPU thread-pinning under combined load, informing Linux cgroups-based CPU prioritization that preserved critical broadcast traffic while bounding dropped requests.
+- *Latency Instrumentation & Observability*: Authored a C++20 envelope-based timestamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with #sym.mu;s resolution, enabling per-stage bottleneck diagnosis, regression detection, and optimization with \<10~#sym.mu;s overhead.
+- *Performance Regression Detection*: Built a statistical regression-detection pipeline on Argo Workflows, applying Bayesian Online Changepoint Detection to flag anomalous processing latencies across 30,000+ tick processor instances; cut remediation time from days to \<24~hours.
+- *Low-Level CPU Optimization & Failover*: Benchmarked CPU thread-pinning under combined load, informing Linux cgroups-based CPU prioritization that preserved broadcast continuity while controlling dropped requests; automated load reassignment during data-center failover.
 - *Predictive Capacity Forecasting*: Rewrote a fragile legacy log-scraping storage monitor as a two-part Python system: a fleet-wide scanner writing structured per-database storage and machine metadata to a centralized datastore, and a forecasting service extrapolating rolling usage trends 14 days ahead with automated alerting. Delivered in one week during the April 2025 tariff-driven volatility spike, protecting 1,000+ machines from storage-exhaustion/data-loss risk.
-- *Performance Regression Detection*: Built a statistical regression-detection pipeline on Kubernetes-native Argo Workflows, applying Bayesian Online Changepoint Detection to flag anomalous processing latencies across 30,000+ tick processor instances; cut remediation time from days to \<24~hours.
-- *Latency Instrumentation & Observability*: Authored a C++20 envelope-based timestamping framework tracing tick updates stage-by-stage through the Ticker Plant pipeline with #sym.mu;s resolution, enabling latency regression detection and optimization with \<10~#sym.mu;s overhead.
+- *Capacity Planning & Cluster Rollouts*: Assessed CPU, memory, and storage headroom ahead of onboarding new global exchanges; owned staged multi-region rollouts of cluster splits and new clusters, rebalancing workloads off overloaded machines to avoid SLO breaches with minimal client disruption.
 - *Production & Incident Ownership*: On-call engineer in 24/7 follow-the-sun rotation for Bloomberg’s Market Data Platform; isolated bad data, performed live synchronization and recovery, and drove #box[root-cause] analysis for major outages under volatile market conditions.
 
 #v(entry-gap)
